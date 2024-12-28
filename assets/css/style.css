@@ -1,0 +1,107 @@
+/* ADD FONTS */
+@font-face {
+    font-family: vazir;
+    src: url(../fonts/Vazir.ttf);
+}
+@font-face {
+  font-family: vazir;
+  src: url(../fonts/Vazir-Black.ttf);
+  font-weight: bolder;
+}
+@font-face {
+  font-family: vazir;
+  src: url(../fonts/Vazir-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: vazir;
+  src: url(../fonts/Vazir-Light.ttf);
+  font-weight: light;
+}
+@font-face {
+  font-family: vazir;
+  src: url(../fonts/Vazir-Medium.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: vazir;
+  src: url(../fonts/Vazir-Thin.ttf);
+  font-weight: thin;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    font: 'vazir';
+    font-family: vazir;
+}
+body {
+    background-color: #121212;
+    padding: 50px 10% 0px;
+    margin: 0;
+    color: #f2f2f2;
+}
+
+.container {
+    background-color: #00000054;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.class-color-01{
+    font-weight: bolder;
+    color: #d81b60b1;
+}
+
+.container header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container header .logo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container header .logo-title h1{
+    margin-bottom: 0;
+}
+
+.container header .tag-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container header .tag-list .tag{
+    background: #1e1e1e;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 6px 8px;
+    font-size: 14px;
+}
+
+.container header .tag-list .tag:hover{
+    background: #2a2a2a;
+    cursor: pointer;
+}
+
+.container header .tag-list .tag:first-child{
+    background: #d81b60b1;
+}
+
+.container header .tag-list .tag:first-child:hover{
+    background: #d81b607e;
+    cursor: pointer;
+}
+
+.container header .tag-list .tag.clicked{
+    background: #d81b607e;
+    cursor: pointer;
+}
